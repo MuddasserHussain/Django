@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static "searchapp/main.css" %}">
+</head>
+
+<body>
+  <header>This is header</header>
+
+	{% block content %}{% endblock %}
+  <footer>This is footer</footer>
+
+</body>
+</html>

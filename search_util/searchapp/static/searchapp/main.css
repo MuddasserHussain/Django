@@ -1,0 +1,7 @@
+body {
+  background-color: yellow;
+}
+header, footer{
+  background-color: black;
+  color: yellow;
+}
