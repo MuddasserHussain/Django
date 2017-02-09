@@ -1,0 +1,15 @@
+{% extends "base_template.html" %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+    <p>These are search resutls.</p>
+
+    <p> You have {{ result_list|length }} result{{ result_list|pluralize }}</p>
+    <ul>
+    {% for line_number, line in result_list.items %}
+        <li>Line #:{{ line_number }}, Line Text: {{ line }}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
